@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>The Office</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-[#181028de] text-white flex justify-center items-center min-h-screen">
+    <div id="wrapper" class="bg-white text-[#181028] p-8 space-y-8 shadow-lg rounded-md w-full max-w-md transition duration-1000">
+        <h2 class="text-xl text-center"> Drag the slider to fit the puzzle </h2>
+        <div class="relative">
+         <img id="img-1" class = "rounded-full" src="https://i.ibb.co/Fh62d5n/office-net-worth.jpg" alt="scott 1">
+         <div id="img-2" class = "border-1 border-white bg-[url(https://i.ibb.co/Fh62d5n/office-net-worth.jpg)] bg-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full w-40 h-40">
+         </div> 
+        </div>
+        <input class="w-full slider" type="range" id="slider">  
+    </div>
+    <div id="congrats" class="absolute -z-10 space-y-4 text-center transition opacity-0">
+        
+        <iframe
+        src="https://giphy.com/embed/jJQC2puVZpTMO4vUs0" width="100%" height="250px" frameBorder="0"
+        class="block" allowFullScreen></iframe>
+        <h2 class="text-3xl font-bold">
+            You got ... 
+        </h2>
+        <p class="text-xl">absolutely nothing 🙊 </p>
+
+        <button id="reset" class="border font-semibold px-4 py-2 rounded hover:bg-white hover:text-purple-950 transition">Reset</button>
+    <script src="script.js"></script>
+</body>
+</html>
